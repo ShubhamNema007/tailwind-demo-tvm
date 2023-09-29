@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.about-tvm-para{
+    @apply w-full lg:w-[258px] 2xl:w-[258px] ml-[81px] text-[16px] leading-[24px] text-[#505D68] font-normal;
+}
