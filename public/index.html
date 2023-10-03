@@ -5,14 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailwind CSS</title>
+    <title>Tailwind CSS Demo(TVM)</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../public/output.css">
+    <link rel="icon" href="../images/tvm-icon.svg">
+    <script src="https://kit.fontawesome.com/c5a43634f6.js" crossorigin="anonymous"></script>
 </head>
+<style>
+    #check:checked~ul {
+        left: 0;
+    }
+</style>
+
 
 <body>
     <main class="bg-[url('../images/Background-Color.svg')] bg-no-repeat bg-cover">
@@ -22,7 +30,12 @@
                     <div>
                         <img src="../images/tvm-header-logo.svg" alt="">
                     </div>
-                    <ul class="flex gap-8 text-white uppercase text-sm">
+                    <input type="checkbox" id="check" hidden>
+                    <label for="check" class="flex justify-end text-white text-2xl mr-2 lg:hidden">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+                    <ul
+                        class="flex flex-col items-center lg:items-start 2xl:items-start lg:flex-row 2xl:flex-row gap-8 text-white uppercase text-sm absolute lg:relative 2xl:relative top-10 lg:top-0 left-[-800px] lg:left-0 2xl:left-0 2xl:top-0 w-full lg:w-auto 2xl:w-auto transition-all duration-300 lg:transition-none 2xl:transition-none">
                         <li class="cursor-pointer hover:text-white hover:underline">
                             Community
                         </li>
@@ -45,7 +58,7 @@
                             Github
                         </li>
                     </ul>
-                    <div class="underline text-white">
+                    <div class="underline text-white hidden lg:block 2xl:block">
                         ASF
                     </div>
                 </div>
@@ -53,13 +66,14 @@
         </header>
         <section>
             <div class="container m-auto pb-32">
-                <div class="text-white mt-[169px]">
+                <div class="text-white mt-5 lg:mt-[169px] 2xl:mt-[169px]">
                     <h1 class="text-[55px]">Apache (incubating) TVM
                     </h1>
                     <p class="text-2xl w-full lg:w-[555px]  2xl:w-[555px]">An End to End Deep Learning Compiler Stack
                         for CPUs, GPUs and
                         accelerators</p>
-                    <button class="mt-10 py-3 px-11 border-solid border-[1px] border-[#3C88B5] ">Get Started</button>
+                    <button class="mt-10 py-3 px-11 border-solid border-[1px] border-[#3C88B5] hover:bg-blue-hover">Get
+                        Started</button>
                 </div>
                 <div class="flex justify-end">
                     <p class="text-white w-full lg:w-[555px] 2xl:w-[555px] mt-[22px] lg:mr-[250px] 2xl:mr-[250px]">
@@ -103,39 +117,39 @@
             <h1 class="text-5xl text-[#252D5A] w-full lg:w-[458px] xl:w-[458px] 2xl:[458px] leading-[55px]">
                 Key Features & Capabilities
             </h1>
-            <div class="grid mt-8 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 gap-8 justify-items-center">
-                <div class="bg-[url('../images/items-bg-one.svg')] bg-no-repeat bg-cover w-[456px] h-[470px]">
-                    <div class="pl-12 pt-[94px]">
+            <div class="grid mt-8 lg:grid-cols-2 2xl:grid-cols-2 gap-8 justify-items-center">
+                <div class="bg-[url('../images/items-bg-one.svg')] bg-no-repeat bg-cover w-full h-[470px]">
+                    <div class="pl-6 lg:pl-12 2xl:pl-12 pt-[94px]">
                         <img src="../images/speed.svg" alt="" class="pb-4">
                         <span class="text-white text-4xl">Performance</span>
-                        <p class="text-white text-base pt-2.5 w-[362px]">
+                        <p class="text-white text-base pt-2.5 lg:w-[362px] 2xl:w-[362px]">
                             Compilation and minimal runtimes commonly unlock ML workloads on existing hardware.
                         </p>
                     </div>
                 </div>
-                <div class="bg-[url('../images/items-bg-one.svg')] bg-no-repeat bg-cover w-[456px] h-[470px]">
-                    <div class="pl-12 pt-[94px]">
+                <div class="bg-[url('../images/items-bg-one.svg')] bg-no-repeat bg-cover w-full h-[470px]">
+                    <div class="pl-6 lg:pl-12 2xl:pl-12 pt-[94px]">
                         <img src="../images/speed.svg" alt="" class="pb-4">
                         <span class="text-white text-4xl">Performance</span>
-                        <p class="text-white text-base pt-2.5 w-[362px]">
+                        <p class="text-white text-base pt-2.5 lg:w-[362px] 2xl:w-[362px]">
                             Compilation and minimal runtimes commonly unlock ML workloads on existing hardware.
                         </p>
                     </div>
                 </div>
-                <div class="bg-[url('../images/items-bg-one.svg')] bg-no-repeat bg-cover w-[456px] h-[470px]">
-                    <div class="pl-12 pt-[94px]">
+                <div class="bg-[url('../images/items-bg-one.svg')] bg-no-repeat bg-cover w-full h-[470px]">
+                    <div class="pl-6 lg:pl-12 2xl:pl-12 pt-[94px]">
                         <img src="../images/speed.svg" alt="" class="pb-4">
                         <span class="text-white text-4xl">Performance</span>
-                        <p class="text-white text-base pt-2.5 w-[362px]">
+                        <p class="text-white text-base pt-2.5 lg:w-[362px] 2xl:w-[362px]">
                             Compilation and minimal runtimes commonly unlock ML workloads on existing hardware.
                         </p>
                     </div>
                 </div>
-                <div class="bg-[url('../images/items-bg-one.svg')] bg-no-repeat bg-cover w-[456px] h-[470px]">
-                    <div class="pl-12 pt-[94px]">
+                <div class="bg-[url('../images/items-bg-one.svg')] bg-no-repeat bg-cover w-full h-[470px]">
+                    <div class="pl-6 lg:pl-12 2xl:pl-12 pt-[94px]">
                         <img src="../images/speed.svg" alt="" class="pb-4">
                         <span class="text-white text-4xl">Performance</span>
-                        <p class="text-white text-base pt-2.5 w-[362px]">
+                        <p class="text-white text-base pt-2.5 lg:w-[362px] 2xl:w-[362px]">
                             Compilation and minimal runtimes commonly unlock ML workloads on existing hardware.
                         </p>
                     </div>
@@ -155,27 +169,27 @@
             </p>
         </div>
         <div class="grid grid-cols-6 justify-items-center items-center gap-[24px] mb-[77px]">
-            <img src="../images/alicloud.svg" alt="ali-cloud">
-            <img src="../images/amd.svg" alt="ali-cloud">
-            <img src="../images/arm.svg" alt="ali-cloud">
-            <img src="../images/aws.svg" alt="ali-cloud">
-            <img src="../images/edgecortix.svg" alt="ali-cloud">
-            <img src="../images/facebook.svg" alt="ali-cloud">
-            <img src="../images/huawei.svg" alt="ali-cloud">
-            <img src="../images/arm.svg" alt="ali-cloud">
-            <img src="../images/drive.svg" alt="ali-cloud">
-            <img src="../images/microsoft.svg" alt="ali-cloud">
-            <img src="../images/xilinx.svg" alt="ali-cloud">
-            <img src="../images/amd.svg" alt="ali-cloud">
-            <img src="../images/edgecortix.svg" alt="ali-cloud">
-            <img src="../images/qualcommic.svg" alt="ali-cloud">
-            <img src="../images/oasislabs.svg" alt="ali-cloud">
-            <img src="../images/oasislabs.svg" alt="ali-cloud">
-            <img src="../images/amd.svg" alt="ali-cloud">
-            <img src="../images/intel.svg" alt="ali-cloud">
+            <img src="../images/alicloud.svg" alt="ali-cloud" class="cursor-pointer">
+            <img src="../images/amd.svg" alt="ali-cloud" class="cursor-pointer">
+            <img src="../images/arm.svg" alt="ali-cloud" class="cursor-pointer">
+            <img src="../images/aws.svg" alt="ali-cloud" class="cursor-pointer">
+            <img src="../images/edgecortix.svg" alt="ali-cloud" class="cursor-pointer">
+            <img src="../images/facebook.svg" alt="ali-cloud" class="cursor-pointer">
+            <img src="../images/huawei.svg" alt="ali-cloud" class="cursor-pointer">
+            <img src="../images/arm.svg" alt="ali-cloud" class="cursor-pointer">
+            <img src="../images/drive.svg" alt="ali-cloud" class="cursor-pointer">
+            <img src="../images/microsoft.svg" alt="ali-cloud" class="cursor-pointer">
+            <img src="../images/xilinx.svg" alt="ali-cloud" class="cursor-pointer">
+            <img src="../images/amd.svg" alt="ali-cloud" class="cursor-pointer">
+            <img src="../images/edgecortix.svg" alt="ali-cloud" class="cursor-pointer">
+            <img src="../images/qualcommic.svg" alt="ali-cloud" class="cursor-pointer">
+            <img src="../images/oasislabs.svg" alt="ali-cloud" class="cursor-pointer">
+            <img src="../images/oasislabs.svg" alt="ali-cloud" class="cursor-pointer">
+            <img src="../images/amd.svg" alt="ali-cloud" class="cursor-pointer">
+            <img src="../images/intel.svg" alt="ali-cloud" class="cursor-pointer">
         </div>
     </section>
-    <section class="bg-[url('../images/Background-Color.svg')] bg-no-repeat bg-cover">
+    <section class="bg-[url('../images/Background-Color.svg')] bg-no-repeat bg-cover bg-center">
         <div class="container m-auto">
             <p class="text-white text-4xl text-center mb-2 pt-12">
                 Join the TVM Community
@@ -188,19 +202,25 @@
                     <span class="text-2xl text-[#252D5A]">TVM Conference</span>
                     <p class="text-[#505D68] mt-2 w-[283px]">We are releasing our public roadmaps on github. Please
                         reach out are interested working in aspects that are not on the roadmap.</p>
-                    <button class="text-white bg-[#252D5A] py-3 px-4 mt-2 text-[12px]">SEE THE PUBLIC ROADMAP</button>
+                    <button
+                        class="text-white bg-[#252D5A] py-3 px-4 mt-2 text-[12px] hover:bg-sky-600 hover:text-white">SEE
+                        THE PUBLIC ROADMAP</button>
                 </div>
                 <div class="bg-white py-[31px] px-[38px] text-center">
                     <span class="text-2xl text-[#252D5A]">TVM Conference</span>
                     <p class="text-[#505D68] mt-2 w-[283px]">We are releasing our public roadmaps on github. Please
                         reach out are interested working in aspects that are not on the roadmap.</p>
-                    <button class="text-white bg-[#252D5A] py-3 px-4 mt-2 text-[12px]">SEE THE PUBLIC ROADMAP</button>
+                    <button
+                        class="text-white bg-[#252D5A] py-3 px-4 mt-2 text-[12px] hover:bg-sky-600 hover:text-white">SEE
+                        THE PUBLIC ROADMAP</button>
                 </div>
                 <div class="bg-white py-[31px] px-[38px] text-center">
                     <span class="text-2xl text-[#252D5A]">TVM Conference</span>
                     <p class="text-[#505D68] mt-2 w-[283px]">We are releasing our public roadmaps on github. Please
                         reach out are interested working in aspects that are not on the roadmap.</p>
-                    <button class="text-white bg-[#252D5A] py-3 px-4 mt-2 text-[12px]">SEE THE PUBLIC ROADMAP</button>
+                    <button
+                        class="text-white bg-[#252D5A] py-3 px-4 mt-2 text-[12px] hover:bg-sky-600 hover:text-white">SEE
+                        THE PUBLIC ROADMAP</button>
                 </div>
             </div>
             <div class="flex justify-center mt-[30px] gap-[30px] pb-16 flex-wrap">
@@ -208,41 +228,81 @@
                     <span class="text-2xl text-[#252D5A]">TVM Conference</span>
                     <p class="text-[#505D68] mt-2 w-[283px]">We are releasing our public roadmaps on github. Please
                         reach out are interested working in aspects that are not on the roadmap.</p>
-                    <button class="text-white bg-[#252D5A] py-3 px-4 mt-2 text-[12px]">SEE THE PUBLIC ROADMAP</button>
+                    <button
+                        class="text-white bg-[#252D5A] py-3 px-4 mt-2 text-[12px] hover:bg-sky-600 hover:text-white">SEE
+                        THE PUBLIC ROADMAP</button>
                 </div>
                 <div class="bg-white py-[31px] px-[38px] text-center">
                     <span class="text-2xl text-[#252D5A]">TVM Conference</span>
                     <p class="text-[#505D68] mt-2 w-[283px]">We are releasing our public roadmaps on github. Please
                         reach out are interested working in aspects that are not on the roadmap.</p>
-                    <button class="text-white bg-[#252D5A] py-3 px-4 mt-2 text-[12px]">SEE THE PUBLIC ROADMAP</button>
+                    <button
+                        class="text-white bg-[#252D5A] py-3 px-4 mt-2 text-[12px] hover:bg-sky-600 hover:text-white">SEE
+                        THE PUBLIC ROADMAP</button>
                 </div>
                 <div class="bg-white py-[31px] px-[38px] text-center">
                     <span class="text-2xl text-[#252D5A]">TVM Conference</span>
                     <p class="text-[#505D68] mt-2 w-[283px]">We are releasing our public roadmaps on github. Please
                         reach out are interested working in aspects that are not on the roadmap.</p>
-                    <button class="text-white bg-[#252D5A] py-3 px-4 mt-2 text-[12px]">SEE THE PUBLIC ROADMAP</button>
+                    <button
+                        class="text-white bg-[#252D5A] py-3 px-4 mt-2 text-[12px] hover:bg-sky-600 hover:text-white">SEE
+                        THE PUBLIC ROADMAP</button>
                 </div>
             </div>
         </div>
     </section>
-
-
-
-
-
-
-    <!-- <section class="py-40">
+    <section class="bg-footer-bg pt-20 pb-20">
         <div class="container m-auto">
-            <div class="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 2xl:grid-cols-3 gap-2 justify-items-center">
-                <div class="w-full h-10 lg:w-80 2xl:w-80 bg-red-700 border-solid border-spacing-2 border-blue-400">Card1
-                </div>
-                <div class="w-full h-10 lg:w-80 2xl:w-80 bg-red-700 border-solid border-spacing-2 border-blue-400">Card2
-                </div>
-                <div class="w-full h-10 lg:w-80 2xl:w-80 bg-red-700 border-solid border-spacing-2 border-blue-400">Card3
-                </div>
-            </div>
+            <ul class="grid grid-cols-1 lg:grid-cols-3 2xl:grid-cols-3 justify-items-center">
+                <li>
+                    <h3 class="text-white text-4xl cursor-pointer">Docs</h3>
+                    <div class="flex items-center gap-3 my-5">
+                        <p class="w-[265px] text-2xl text-footer-font-color cursor-pointer">Written with care
+                            <br>& love for you
+                        </p>
+                        <img src="../images/arrow-icon.svg" alt="arrow-icon" class="cursor-pointer">
+                    </div>
+                </li>
+                <li>
+                    <h3 class="text-white text-4xl cursor-pointer">Github
+                    </h3>
+                    <div class="flex items-center gap-3 my-5">
+                        <p class="w-[265px] text-2xl text-footer-font-color cursor-pointer">Access our<br>Github repo
+                        </p>
+                        <img src="../images/arrow-icon.svg" alt="arrow-icon" class="cursor-pointer">
+                    </div>
+                </li>
+                <li>
+                    <h3 class="text-white text-4xl cursor-pointer">Blog
+                    </h3>
+                    <div class="flex items-center gap-3 my-5">
+                        <p class="w-[265px] text-2xl text-footer-font-color cursor-pointer">Read more about TVM<br>and
+                            our thinking</p>
+                        <img src="../images/arrow-icon.svg" alt="arrow-icon" class="cursor-pointer">
+                    </div>
+                </li>
+            </ul>
         </div>
-    </section> -->
+    </section>
+    <section class="bg-dark-blue pb-11">
+        <div class="container m-auto">
+            <div
+                class="flex flex-col lg:flex-row 2xl:flex-row lg:justify-between 2xl:justify-between items-center border-b-2 border-b-[#252D5A] pt-5 pb-4">
+                <img src="../images/tvm-header-logo.svg" alt="tvm-icon">
+                <p class="text-white text-sm">© 2020 Apache Software Foundation | All right reserved</p>
+            </div>
+            <p class="text-white text-sm pt-8">
+                Apache TVM is an effort undergoing incubation at The Apache Software Foundation (ASF), sponsored by the
+                Apache Incubator. Incubation is required of all newly accepted projects until a further review indicates
+                that the infrastructure, communications, and decision making process have stabilized in a manner
+                consistent with other successful ASF projects. While incubation status is not necessarily a reflection
+                of the completeness or stability of the code, it does indicate that the project has yet to be fully
+                endorsed by the ASF. Copyright © 2020 The Apache Software Foundation. Apache TVM, Apache, the Apache
+                feather, and the Apache TVM project logo are either trademarks or registered trademarks of the Apache
+                Software Foundation.
+            </p>
+        </div>
+    </section>
 </body>
 
 </html>

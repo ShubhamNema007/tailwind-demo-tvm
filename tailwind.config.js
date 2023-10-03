@@ -13,7 +13,7 @@ module.exports = {
       // 'sm': { 'max': '639px' },
       // 'xs': { 'max': '365px' },
 
-      xs:'365px',
+      xs:'345px',
       sm: '640px',
       md: '768px',
       lg: '1024px',
@@ -23,6 +23,12 @@ module.exports = {
     extend: {
       fontFamily: {
         'sans': ['PT Sans, sans-serif', ...defaultTheme.fontFamily.sans],
+      },
+      colors: {
+        'blue-hover': 'rgba(3, 121, 182, 0.4)',
+        'footer-bg': '#003048;',
+        'footer-font-color': '#0379B6',
+        'dark-blue': '#001B29'
       },
     },
   },
