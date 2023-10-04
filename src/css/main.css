@@ -5,3 +5,9 @@
 .about-tvm-para{
     @apply w-full lg:w-[258px] 2xl:w-[258px] ml-[81px] text-[16px] leading-[24px] text-[#505D68] font-normal;
 }
+#check:checked~ul {
+    right: 0;
+}
+.header-fixed{
+    @apply fixed w-full bg-[#003048] animate-smoothScroll z-[999];
+}
